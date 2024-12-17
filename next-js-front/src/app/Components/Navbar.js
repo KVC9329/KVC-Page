@@ -32,18 +32,18 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
-          <Link href="/" className="hover:text-gray-500">
+        <div className="hidden md:flex space-x-8 font-semibold">
+          <Link href="/" className="hover:text-gray-300">
             Home
           </Link>
-          <Link href="/about" className="hover:text-gray-500">
-            About
+          <Link href="/about" className="hover:text-gray-300">
+            About us
           </Link>
-          <Link href="/services" className="hover:text-gray-500">
-            Services
+          <Link href="/jobs" className="hover:text-gray-300">
+            Apply jobs
           </Link>
-          <Link href="/contact" className="hover:text-gray-500">
-            Contact
+          <Link href="/contact" className="hover:text-gray-300">
+            Contact us
           </Link>
         </div>
 
@@ -85,21 +85,21 @@ const Navbar = () => {
             className="block py-2 hover:text-gray-500"
             onClick={() => setMenuOpen(false)}
           >
-            About
+            About us
           </Link>
           <Link
-            href="/services"
+            href="/jobs"
             className="block py-2 hover:text-gray-500"
             onClick={() => setMenuOpen(false)}
           >
-            Services
+            Apply jobs
           </Link>
           <Link
             href="/contact"
             className="block py-2 hover:text-gray-500"
             onClick={() => setMenuOpen(false)}
           >
-            Contact
+            Contact us
           </Link>
         </div>
       </div>

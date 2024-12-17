@@ -27,12 +27,12 @@ const Accordion = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto mt-10">
+    <div className="w-full max-w-md mx-auto mt-10 bg-white">
       {items.map((item, index) => (
         <div key={index} className="border-b border-gray-300">
           <button
             onClick={() => toggleAccordion(index)}
-            className="w-full flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200"
+            className="w-full flex justify-between items-center p-4 bg-white hover:bg-gray-200"
           >
             <span className="text-lg font-medium">{item.title}</span>
             <span
