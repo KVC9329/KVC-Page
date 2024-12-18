@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CompaniesList = [ 
     "/techm_logo.png", 
-    "/infosys_logo.png", 
+    "/Infosys_logo.png", 
     "/taskus-logo.png",
     "/concentrix_logo.png",
     "/wipro_logo.png",
