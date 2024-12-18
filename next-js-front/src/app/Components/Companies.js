@@ -7,7 +7,8 @@ const CompaniesList = [
     "/concentrix_logo.png",
     "/wipro_logo.png",
     "/teleperformance_logo.png",
-    "/telusinternational_logo.png"
+    "/telusInternational_logo.png",
+    "/EXL_logo.png"
 ];
 
 export default function Companies() {
