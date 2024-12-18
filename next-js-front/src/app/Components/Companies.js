@@ -8,7 +8,16 @@ const CompaniesList = [
     "/wipro_logo.png",
     "/teleperformance_logo.png",
     "/telusInternational_logo.png",
-    "/EXL_logo.png"
+    "/EXL_logo.png",
+    "/Accor_logo.png",
+    "/Amazon_logo.png",
+    "/Capgemini_logo.png",
+    "/credance_logo.png",
+    "/IGT_logo.png",
+    "/Transcom_logo.png",
+    "/vertex_logo.png",
+    "/Ienergizer_logo.png",
+    "/output-onlinepngtools.png"
 ];
 
 export default function Companies() {
