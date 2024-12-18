@@ -28,33 +28,13 @@ export default function Home() {
           <Comapnies/>
         </div>
       </div>
-      {/* <div className="h-screen bg-white content-center justify-items-center">
-        <h1 className="text-4xl py-10 content-center">Services we provide</h1>
-        <div className="grid grid-cols-12 gap-10 justify-items-center text-center">
-          <div className="col-span-12 sm:col-span-4 mx-5 bg h-full ">
-            <Image src="/recruit.jpg" className="rounded-2xl" width={350} height={350}/>
-            <h1 className="text-2xl py-5 content-center">Recruitment & Staffing</h1>
-          </div>
-          <div className="col-span-12 sm:col-span-4 mx-5  h-full ">
-            <Image src="/outsource.jpg" className="rounded-2xl" width={350} height={350}/>
-            <h1 className="text-2xl py-5 content-center">Outsourcing</h1>
-          </div>
-          <div className="col-span-12 sm:col-span-4 mx-5  h-full ">
-            <Image src="/train.jpg" className="rounded-2xl" width={350} height={350}/>
-            <h1 className="text-2xl py-5 content-center justify-center">Training</h1>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="relative top-[40%] sm:top-0 grid place-content-center m-5 bg-whitesmoke">
-        <h1 className="text-4xl  text-center">Our Hiring Process</h1>
-        <div>
-          <Image src="/recruitment (1).png" className="rounded-2xl" width={350} height={0}/>
-        </div>
-      </div> */}
       <div className="h-screen relative content-center justify-items-center ">
         <h1 className="sm:text-5xl text-3xl py-5 text-center">Frequently Asked Questions </h1>
         <Example/>
       </div>
+      {/* <div className="h-screen">
+          
+      </div> */}
       {/* <button class="bg-purple-600 text-white py-1 w-screen 
               shadow-md hover:shadow-xl hover:shadow-purple-500/70 
               hover:ring-4 hover:ring-purple-400/50 

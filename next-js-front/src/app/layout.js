@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Restaurant Menu",
+  title: "KVC consultants ltd",
   description: "A simple UI to handle menus",
 };
 

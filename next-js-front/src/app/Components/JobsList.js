@@ -12,7 +12,7 @@ const JobList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://sheetdb.io/api/v1/w4pjk3wv2o7ir");
+        const response = await fetch("https://script.google.com/macros/s/AKfycbzyATvm-z5Zx-BnzyUHVGpO4TSTCVR7zKIdPdTD0x4Uw08vi2sk1rQIjPFe6jYiz3C1/exec");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -31,7 +31,10 @@ const JobList = () => {
   // fetchData();
 
   if (loading) {
-    return <p className="text-center text-gray-600 mt-8">Loading...</p>;
+    return <div className="flex flex-col justify-center items-center h-screen">
+            <div className="content-center w-16 h-16 border-4 border-white border-dashed rounded-full animate-spin"></div>
+            <p className="text-white">Loading jobs...</p>
+    </div>;
   }
 
   if (error) {
@@ -41,8 +44,7 @@ const JobList = () => {
 
 
   return (
-    <div className="overflow-y-auto h-screen h-full content-center container mx-auto p-4 mb-12">
-      <h1 className="sm:text-5xl text-3xl py-10 text-center">Current Job Openings</h1>
+    <div className="h-screen content-center container mx-auto p-4 mb-12">
       <div className="grid sm:grid-cols-3 gap-10">
       {jobs.map((job, index) => {
               
@@ -51,9 +53,9 @@ const JobList = () => {
             const emailSubject = `Job Application`;
             const emailBody = `Name: [Your Name]\nEmail: [Your Email]\nExperience: [Your Experience]\nJob Title: ${job["Job Title"]}`;
               // const templateMessage = `Name: [Your Name]%0AEmail: [Your Email]%0AExperience: [Your Experience]%0AJob Title: ${job["Job Title"]}`;
-
+        
             return (
-              <div key={index} className="bg-white drop-shadow hover:shadow-md rounded-lg ease-in-out duration-300 bg-whitesmoke">
+              <div key={index} className="grid-grow bg-white drop-shadow hover:shadow-md rounded-lg ease-in-out duration-300 bg-whitesmoke">
                 <h1 className="py-5 px-2 font-semibold text-xl text-center">{job["Title"]}</h1>
                 <p className="px-5 font-semibold">Location : {job["Location"]}</p>
                 <p className="px-5 font-semibold">Experience : {job["Experience"]}</p>
