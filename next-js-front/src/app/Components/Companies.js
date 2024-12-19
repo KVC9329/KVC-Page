@@ -16,8 +16,7 @@ const CompaniesList = [
     "/IGT_logo.png",
     "/Transcom_logo.png",
     "/vertex_logo.png",
-    "/Ienergizer_logo.png",
-    "/output-onlinepngtools.png"
+    "/image.png",
 ];
 
 export default function Companies() {

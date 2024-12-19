@@ -4,18 +4,18 @@ import { useState } from "react";
 
 const items = [
   {
-    title: "What is Next.js?",
+    title: "Is This Any Fake Consultancy?",
     content:
-      "Next.js is a React framework that enables server-side rendering and static site generation.",
+      "KVC Consulatnsts Ltd is a trustworthy company trusted by major MNCs.",
   },
   {
-    title: "What is Tailwind CSS?",
+    title: "Is there any placement charges?",
     content:
-      "Tailwind CSS is a utility-first CSS framework for creating custom designs without writing much CSS.",
+      "No, there is not any kind of placement charges.",
   },
   {
-    title: "How to use this accordion?",
-    content: "Click on any title to toggle the corresponding content.",
+    title: "Is this a new company?",
+    content: "No, KVC Consultants ltd is a realiable company. Placed over 10,000 candidates and having 10+ years of experience",
   },
 ];
 

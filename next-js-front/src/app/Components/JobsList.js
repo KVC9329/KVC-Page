@@ -12,7 +12,8 @@ const JobList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbzyATvm-z5Zx-BnzyUHVGpO4TSTCVR7zKIdPdTD0x4Uw08vi2sk1rQIjPFe6jYiz3C1/exec");
+        // const response = await fetch("https://sheetdb.io/api/v1/w4pjk3wv2o7ir");
+        const response = await fetch("https://script.googleusercontent.com/macros/echo?user_content_key=MXCiipgvqwJv267buOtBme4B4h-U3sovgKMz6jvB7GaYWnpdKCt3V_yjrKvwvIakOHTiaooRhi3mcoOow9twlhSPjjAM5KG0m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnDjMLHMsRbHMccsXWN_GE8PhRuDmrLnFG4P08sUIeFxwsT8LsTgpF5hiaeIPxJ1YISpOUex2kBH3kwRWRAMIQhtFyJ8N2EaNYw&lib=MU3J6t62w4hVQRZBQhXaTMWqCSSRPIxnK");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -31,7 +32,7 @@ const JobList = () => {
   // fetchData();
 
   if (loading) {
-    return <div className="flex flex-col justify-center items-center h-screen">
+    return <div className="flex flex-col pt-52 items-center h-screen">
             <div className="content-center w-16 h-16 border-4 border-white border-dashed rounded-full animate-spin"></div>
             <p className="text-white">Loading jobs...</p>
     </div>;
@@ -44,7 +45,7 @@ const JobList = () => {
 
 
   return (
-    <div className="h-screen content-center container mx-auto p-4 mb-12">
+    <div className="h-screen content-center container mx-auto p-4">
       <div className="grid sm:grid-cols-3 gap-10">
       {jobs.map((job, index) => {
               

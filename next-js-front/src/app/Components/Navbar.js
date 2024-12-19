@@ -69,7 +69,7 @@ const Navbar = () => {
           menuOpen ? "translate-y-0" : "-translate-y-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
-        <div className="container mx-auto px-4 py-4 h-screen">
+        <div className="text-center text-2xl font-semibold my-auto h-screen">
         {/* <h1 className="text-lg font-bold text-black"> */}
           <Image className="rounded-lg" src="/brandimg.jpg" width={100} height={5} alt="brand logo" />
         {/* </h1> */}
