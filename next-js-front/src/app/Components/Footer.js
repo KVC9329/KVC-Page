@@ -8,7 +8,7 @@ const Footer = () => {
             <div className='flex flex-col text-white'>
                 <div className="my-3">
                     <p className="font-bold py-2">DELHI RECRUITMENT CENTER:</p>
-                    <p> 4th Floor, Guru Nanak Market, 15, 600 Meters From Mool Chand Metro, above Kings & Queen Salon, Part 4, Lajpat Nagar, New Delhi, Delhi 110024</p>
+                    <p> 4th Floor, Guru Nanak Market, 15, 600 Meters From Mool Chand Metro, above Kings <br/>& Queen Salon, Part 4, Lajpat Nagar, New Delhi, Delhi 110024</p>
                 </div>
 
                 <div className="my-3">

@@ -17,6 +17,8 @@ const CompaniesList = [
     "/Transcom_logo.png",
     "/vertex_logo.png",
     "/image.png",
+    "/aditya_logo.png",
+    "/Altruist_logo.png"
 ];
 
 export default function Companies() {
