@@ -24,7 +24,7 @@ const About = () => {
       </ul>
       <br />
       <p className="text-lg leading-relaxed ">
-        It&#39;s a journey that over time has seen the company grow from strength to strength and emerge as a top-class service provider to meet the growing business needs.
+        It is a journey that over time has seen the company grow from strength to strength and emerge as a top-class service provider to meet the growing business needs.
       </p>
     </div>
   );
