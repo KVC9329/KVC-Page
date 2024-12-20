@@ -11,10 +11,10 @@ export default function Home() {
       <div className="h-screen bg-[url('/background.jpeg')] flex flex-col items-center justify-center">
       {/* <div className="h-screen bg-gradient-to-r from-indigo-800 to-indigo-500 flex flex-col items-center justify-center"> */}
 
-        <h1 className="text-black text-6xl sm:text-7xl font-bold pl-2">
+        <h1 className="text-black text-6xl sm:text-7xl font-bold px-2">
           <Counter number={10000} title="Placed Candidates"/>
         </h1>
-        <h1 className="text-black text-5xl font-bold pl-2">
+        <h1 className="text-black text-5xl font-bold px-2">
           <Counter number={10} title="Years of Experience"/>
         </h1>
         <Link href="/jobs">
