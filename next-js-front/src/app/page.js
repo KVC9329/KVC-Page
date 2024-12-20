@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
       <div className="h-screen relative content-center justify-items-center ">
-        <h1 className="sm:text-5xl text-3xl py-5 text-center">Frequently Asked Questions </h1>
+        <h1 className="sm:text-5xl text-3xl py-5 text-center">Frequently Asked <br/> Questions </h1>
         <Example/>
       </div>
       

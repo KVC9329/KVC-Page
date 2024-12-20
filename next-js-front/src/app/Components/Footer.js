@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-     <footer className="bg-black px-4 realtive">
+     <footer className="w-full bg-black px-4">
         <h1 className="text-3xl font-semibold text-white py-5">KVC CONSULTANTS LTD.</h1>
         <div className='grid sm:grid-cols-2'> 
             <div className='flex flex-col text-white'>

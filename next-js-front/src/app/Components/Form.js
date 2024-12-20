@@ -20,7 +20,7 @@ export default function Form() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center">
       <form
         onSubmit={handleSubmit}
         className="w-screen max-w-lg shadow-md rounded-lg p-6 bg-backdrop-blur-md"
@@ -35,7 +35,7 @@ export default function Form() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border border-white bg-transparent rounded-lg focus:outline-none focus:ring-4 focus:ring-white text-white"
             placeholder="Enter your name"
             required
           />
@@ -50,7 +50,7 @@ export default function Form() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-5 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border border-white bg-transparent rounded-lg focus:outline-none focus:ring-4 focus:ring-white text-white"
             placeholder="Enter your email"
             required
           />
@@ -65,16 +65,17 @@ export default function Form() {
             value={formData.message}
             onChange={handleChange}
             rows="4"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border border-white bg-transparent rounded-lg focus:outline-none focus:ring-4 focus:ring-white text-white"
             placeholder="Enter your message"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
-        >
+          className="w-full bg-white text-black py-2 px-4 rounded-lg hover:bg-white transition duration-300 hover:bg-gray-200"
           Submit
+        >
+          submit
         </button>
       </form>
     </div>

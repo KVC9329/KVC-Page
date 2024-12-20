@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { MdEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
+import { FaRupeeSign } from "react-icons/fa";
+import { IoMdPerson } from "react-icons/io";
 
 const JobList = () => {
   const [jobs, setJobs] = useState([]);
@@ -29,12 +34,39 @@ const JobList = () => {
     fetchData();
   }, []);
 
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const cachedJobs = sessionStorage.getItem('jobs');
+  //       if (cachedJobs) {
+  //         setJobs(JSON.parse(cachedJobs));
+  //         setLoading(false);
+  //         return;
+  //       }
+        
+  //       const response = await fetch("https://script.googleusercontent.com/macros/echo?...");
+  //       if (!response.ok) {
+  //         throw new Error("Failed to fetch data");
+  //       }
+        
+  //       const data = await response.json();
+  //       sessionStorage.setItem('jobs', JSON.stringify(data));
+  //       setJobs(data);
+  //       setLoading(false);
+  //     } catch (err) {
+  //       setError(err.message);
+  //       setLoading(false);
+  //     }
+  //   };
+  
+  //   fetchData();
+  // }, []);
   // fetchData();
 
   if (loading) {
     return <div className="flex flex-col pt-52 items-center h-screen">
-            <div className="content-center w-16 h-16 border-4 border-white border-dashed rounded-full animate-spin"></div>
-            <p className="text-white">Loading jobs...</p>
+            <div className="content-center w-16 h-16 border-4 border-blue-400 border-dashed rounded-full animate-spin"></div>
+            <p className="text-white">Loading job openings...</p>
     </div>;
   }
 
@@ -58,17 +90,18 @@ const JobList = () => {
             return (
               <div key={index} className="grid-grow bg-white drop-shadow hover:shadow-md rounded-lg ease-in-out duration-300 bg-whitesmoke">
                 <h1 className="py-5 px-2 font-semibold text-xl text-center">{job["Title"]}</h1>
-                <p className="px-5 font-semibold">Location : {job["Location"]}</p>
-                <p className="px-5 font-semibold">Experience : {job["Experience"]}</p>
-                <p className="px-5 font-semibold mb-5">Salary : {job["Salary"]}</p>
-                <div className="flex flex-col sm:flex-row mb-5 ml-5">
+                <p className="px-5 font-semibold flex"><div className="px-1 py-1"><MdLocationOn /></div>Location : {job["Location"]}</p>
+                <p className="px-5 font-semibold flex"><div className="px-1 py-1"><IoMdPerson /></div>Experience : {job["Experience"]}</p>
+                <p className="px-5 font-semibold flex"><div className="px-1 py-1"><FaRupeeSign /></div>Salary : {job["Salary"]}</p>
+                <div className="flex flex-row my-5">
                 <Link
                     href={`https://wa.me/${job["Whatsapp"]}?text=${templateMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-center bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition duration-300 my-2"
+                    className="flex text-center bg-green-500 text-white px-7 py-2 rounded-full hover:bg-green-600 transition duration-300 mx-auto my-auto"
                 >
-                  Apply @WhatsApp
+                  <div className="py-1 px-1"><FaWhatsapp /></div>
+                  WhatsApp
                 </Link>
                 <Link
                   href={`mailto:${emailRecipient}?subject=${encodeURIComponent(
@@ -76,9 +109,10 @@ const JobList = () => {
                   )}&body=${encodeURIComponent(emailBody)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-center bg-red-700 text-white px-4 py-2 rounded-full hover:bg-red-900 transition duration-300 mx-5 my-2"
+                  className="flex text-center bg-red-700 text-white px-7 py-2 rounded-full hover:bg-red-900 transition duration-300 mx-auto my-auto"
                 >
-                  Apply @Email
+                  <div className="py-1 px-1"><MdEmail /></div>
+                  Email
                 </Link>
                 </div>
               </div>
